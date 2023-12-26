@@ -7,9 +7,9 @@ import glob
 
 root_path = glob.glob('/content/vietnamese/labels/*')
 
-train_label = open("train_label.txt","w")
-test_label = open("test_label.txt","w")
-useen_label = open("useen_label.txt","w")
+train_label = open("train/train_label.txt","w")
+test_label = open("train/test_label.txt","w")
+useen_label = open("train/useen_label.txt","w")
 for file in root_path:
     with open(file) as f:
       content = f.readlines()
